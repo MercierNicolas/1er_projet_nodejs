@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../reusables/layout'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../reusables/menu'); %>
+    </header>
+    <h1>Connexion</h1>
+    <main class="jumbotron">
+        <form action="co" method="post" enctype="multipart/form-data">
+            <div class="container-vente-produit">
+                <fieldset>
+                    <legend>Connexion </legend>
+                    <hr>
+
+                    <label for="user_email">Email : </label>
+                    <input type="text" name="user_email" id="user_email" placeholder="Entrez votre Email" required>
+                    <br>
+                    <label for="user_mdp_co">Mots de passe : </label>
+                    <input type="password" name="user_mdp_co" id="user_mdp_co" placeholder="Entrez votre Mots de passe" required>
+                    <br>
+                    <br>
+                 
+                    <br>
+                    <button type="submit">Connexion</button>
+                </fieldset>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <%- include('../reusables/footer'); %>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../reusables/layout'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../reusables/menu'); %>
+    </header>
+
+    <main class="jumbotron">
+        <form action="enregistrer-produits" method="post" enctype="multipart/form-data">
+            <div class="container-vente-produit">
+                <fieldset>
+                    <legend>Enregistrez votre produit à vendre </legend>
+                    <hr>
+
+                    <label for="nom_produit">Nom du produit : </label>
+                    <input type="text" name="nom_produit" id="nom_produit" placeholder="Entrez le nom du produit">
+                    <br>
+                    <label for="prix_produit">Prix produit en €: </label>
+                    <input type="text" name="prix_produit" id="prix_produit" placeholder="0">
+                    <br>
+                    <label for="descript_produit">Description du produit</label>
+                    <br>
+                    <textarea name="descript_produit" id="descript_produit" cols="33" rows="8" placeholder="Entrez le nom de votre produit">
+                    </textarea>
+                    <br>
+                    <br>
+                    <input type="file" name="product_image" id="image">
+                    <!-- <label for="image">Entrer l'URL de l'image </label> <br>
+                    <input type="text" name="product_image" id="image"> -->
+                    <br>
+                    <br>
+                    <button type="submit">Enregistrer</button>
+                </fieldset>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../reusables/footer'); %>
+    </footer>
+
+</body>
+
+</html>
